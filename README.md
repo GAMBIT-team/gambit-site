@@ -34,7 +34,7 @@ python3 -m http.server 8000
 index.html          landing page
 news/               news archive, posts, and _template.html
 assets/css/site.css single stylesheet (design tokens at the top)
-assets/fonts/       self-hosted webfonts (Clash Display, Archivo)
+assets/fonts/       self-hosted webfont (Public Sans, variable, upright + italic)
 assets/img/         logo, team photos, and favicon
 CNAME               custom-domain marker for GitHub Pages
 _config.yml         keeps internal docs out of the published site
