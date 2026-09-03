@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     NEWS POST TEMPLATE — how to publish a post (about 5 minutes)
+
+     1. Copy this file to news/YYYY-MM-short-slug.html
+        (e.g. news/2027-01-first-candidate.html)
+     2. Edit everything marked TODO below.
+     3. Open news/index.html and copy an <article class="news-item">
+        block (with its news-item-head and news-item-body divs) to the
+        TOP of the list (newest first); update its date, link, title,
+        and excerpt to match this post.
+     4. Optionally feature it on the homepage: index.html has the same
+        news-item block in the News section.
+     5. Commit and push — GitHub Pages publishes automatically.
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO: post title -->
+  <title>Post title here | GAMBIT</title>
+  <!-- TODO: one-sentence summary for search engines and link previews -->
+  <meta name="description" content="One-sentence summary of the post.">
+  <!-- TODO: match the filename -->
+  <link rel="canonical" href="https://projectgambit.org/news/YYYY-MM-short-slug.html">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicons/favicon-192.png">
+  <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <div class="page">
+    <span class="hero-pole n" aria-hidden="true">N</span>
+    <span class="hero-pole s" aria-hidden="true">S</span>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="../index.html">GAMBIT</a>
+      <ul class="nav-links">
+        <li><a href="../index.html#approach">Approach</a></li>
+        <li><a href="../index.html#team">Team</a></li>
+        <li><a href="../index.html#market">Market</a></li>
+        <li><a href="index.html">News</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="page-main">
+      <div class="container">
+        <article class="article">
+          <!-- TODO: date. datetime is machine-readable (YYYY-MM or YYYY-MM-DD) -->
+          <time class="news-date" datetime="2026-01">January 2026</time>
+          <!-- TODO: post title -->
+          <h1 class="page-title">Post title here</h1>
+
+          <div class="article-body">
+            <!-- TODO: body. Plain <p> paragraphs. A few extras you can use:
+                 <p class="aside">…</p>          smaller, muted paragraph
+                 <a href="…">link text</a>        links
+                 <img src="…" alt="describe it">  images (put files in ../assets/img/) -->
+            <p>First paragraph.</p>
+
+            <p>Second paragraph.</p>
+          </div>
+
+          <nav class="article-nav" aria-label="Article">
+            <a class="article-back" href="index.html">All news</a>
+            <a class="article-back" href="../index.html">Home</a>
+          </nav>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-meta">
+          <span>© 2026 Project GAMBIT</span>
+          <span>projectgambit.org</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

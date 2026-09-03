@@ -1,0 +1,392 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-08-11T21:45:26.767075+00:00",
+ "title": "Design System: GAMBIT",
+ "extensions": {
+  "colorMeta": {
+   "ground": {
+    "role": "neutral",
+    "displayName": "Ground",
+    "canonical": "#060a13",
+    "tonalRamp": [
+     "oklch(15% 0.03 262)",
+     "oklch(25% 0.035 262)",
+     "oklch(37% 0.04 262)",
+     "oklch(49% 0.045 262)",
+     "oklch(61% 0.045 262)",
+     "oklch(73% 0.04 262)",
+     "oklch(85% 0.03 262)",
+     "oklch(95% 0.015 262)"
+    ]
+   },
+   "ground-raise": {
+    "role": "neutral",
+    "displayName": "Raised Ground",
+    "canonical": "#0a1120",
+    "tonalRamp": [
+     "oklch(16% 0.04 262)",
+     "oklch(26% 0.045 262)",
+     "oklch(38% 0.05 262)",
+     "oklch(50% 0.05 262)",
+     "oklch(62% 0.05 262)",
+     "oklch(74% 0.04 262)",
+     "oklch(86% 0.03 262)",
+     "oklch(95% 0.015 262)"
+    ]
+   },
+   "surface": {
+    "role": "neutral",
+    "displayName": "Surface",
+    "canonical": "#0e1728",
+    "tonalRamp": [
+     "oklch(17% 0.045 262)",
+     "oklch(27% 0.05 262)",
+     "oklch(39% 0.055 262)",
+     "oklch(51% 0.055 262)",
+     "oklch(63% 0.05 262)",
+     "oklch(75% 0.045 262)",
+     "oklch(86% 0.03 262)",
+     "oklch(95% 0.015 262)"
+    ]
+   },
+   "hairline": {
+    "role": "neutral",
+    "displayName": "Hairline",
+    "canonical": "rgba(126, 154, 220, 0.16)",
+    "tonalRamp": [
+     "rgba(126,154,220,0.06)",
+     "rgba(126,154,220,0.10)",
+     "rgba(126,154,220,0.16)",
+     "rgba(126,154,220,0.24)",
+     "rgba(126,154,220,0.34)",
+     "rgba(126,154,220,0.5)",
+     "rgba(126,154,220,0.7)",
+     "rgba(126,154,220,0.9)"
+    ]
+   },
+   "hairline-strong": {
+    "role": "neutral",
+    "displayName": "Strong Hairline",
+    "canonical": "rgba(126, 154, 220, 0.34)"
+   },
+   "text": {
+    "role": "neutral",
+    "displayName": "Text",
+    "canonical": "#e8edf8",
+    "tonalRamp": [
+     "oklch(20% 0.02 265)",
+     "oklch(32% 0.02 265)",
+     "oklch(44% 0.02 265)",
+     "oklch(56% 0.02 265)",
+     "oklch(68% 0.02 265)",
+     "oklch(80% 0.018 265)",
+     "oklch(89% 0.015 265)",
+     "oklch(95% 0.01 265)"
+    ]
+   },
+   "text-muted": {
+    "role": "neutral",
+    "displayName": "Muted Text",
+    "canonical": "#9fadc9",
+    "tonalRamp": [
+     "oklch(20% 0.04 265)",
+     "oklch(31% 0.04 265)",
+     "oklch(42% 0.04 265)",
+     "oklch(53% 0.045 265)",
+     "oklch(64% 0.045 265)",
+     "oklch(74% 0.045 265)",
+     "oklch(85% 0.035 265)",
+     "oklch(94% 0.02 265)"
+    ]
+   },
+   "field-cyan": {
+    "role": "primary",
+    "displayName": "Field Cyan",
+    "canonical": "#45e0e0",
+    "tonalRamp": [
+     "oklch(18% 0.06 195)",
+     "oklch(30% 0.09 195)",
+     "oklch(42% 0.11 195)",
+     "oklch(54% 0.12 195)",
+     "oklch(66% 0.13 195)",
+     "oklch(78% 0.13 195)",
+     "oklch(87% 0.1 195)",
+     "oklch(95% 0.05 195)"
+    ]
+   },
+   "magnet-blue": {
+    "role": "primary",
+    "displayName": "Magnet Blue",
+    "canonical": "#3e6dff",
+    "tonalRamp": [
+     "oklch(18% 0.09 265)",
+     "oklch(29% 0.13 265)",
+     "oklch(40% 0.17 265)",
+     "oklch(51% 0.21 265)",
+     "oklch(62% 0.19 265)",
+     "oklch(73% 0.15 265)",
+     "oklch(84% 0.1 265)",
+     "oklch(94% 0.04 265)"
+    ]
+   },
+   "magnet-blue-bright": {
+    "role": "primary",
+    "displayName": "Bright Magnet Blue",
+    "canonical": "#6f92ff"
+   },
+   "magnet-violet": {
+    "role": "primary",
+    "displayName": "Magnet Violet",
+    "canonical": "#8a5cff",
+    "tonalRamp": [
+     "oklch(18% 0.09 295)",
+     "oklch(29% 0.13 295)",
+     "oklch(40% 0.17 295)",
+     "oklch(52% 0.21 295)",
+     "oklch(63% 0.19 295)",
+     "oklch(74% 0.15 295)",
+     "oklch(85% 0.1 295)",
+     "oklch(94% 0.04 295)"
+    ]
+   },
+   "magnet-violet-bright": {
+    "role": "primary",
+    "displayName": "Bright Violet",
+    "canonical": "#a685ff"
+   },
+   "loop-mid-blue": {
+    "role": "primary",
+    "displayName": "Loop Mid-Blue",
+    "canonical": "#5f7fff"
+   },
+   "pole-north": {
+    "role": "secondary",
+    "displayName": "Pole North (warm coral)",
+    "canonical": "#e08585"
+   },
+   "pole-south": {
+    "role": "secondary",
+    "displayName": "Pole South (cool periwinkle)",
+    "canonical": "#7d9be8"
+   },
+   "blue-white": {
+    "role": "accent",
+    "displayName": "Blue White",
+    "canonical": "#cfdcff",
+    "note": "News article title color (user-requested 2026-08-11); hover shifts to field-cyan."
+   }
+  },
+  "typographyMeta": {
+   "display": {
+    "displayName": "Display",
+    "purpose": "The GAMBIT wordmark in the hero only; wide-tracked caps with optical recenter (margin-right: -0.16em)."
+   },
+   "headline": {
+    "displayName": "Headline",
+    "purpose": "Section titles and inner-page titles; sentence case, text-wrap: balance."
+   },
+   "title": {
+    "displayName": "Title",
+    "purpose": "Stage headings (with leading 26px stroke icon), roster names, footer contact heading."
+   },
+   "body": {
+    "displayName": "Body",
+    "purpose": "All prose; leads 1.15rem/1.7 muted at full container width; emphasis is weight 550 in full text color. Shipped size ramp (rem): 0.6, 0.72\u20130.85 clamp, 0.8, 0.82, 0.85, 0.88, 0.9, 0.95, 0.98, 1.0, 1.05, 1.0625, 1.15, 1.3, 1.45 plus clamp() display sizes."
+   },
+   "label": {
+    "displayName": "Label",
+    "purpose": "News dates, program attribution, institution names, footer meta; Title Case, Archivo 550, 0.04\u20130.09em tracking (amended 2026-08-10). Uppercase survives only in nav links, the hero acronym line, and brand lockups."
+   }
+  },
+  "shadows": [
+   {
+    "name": "button-hover-glow",
+    "value": "0 6px 28px -6px rgba(62, 109, 255, 0.55)",
+    "purpose": "Blue glow under .btn on hover; the system's only box-shadow."
+   }
+  ],
+  "motion": [
+   {
+    "name": "rays-turn",
+    "value": "rotate 360deg over 240s linear infinite",
+    "purpose": "Glacial rotation of the hero field-ray SVG; disabled under prefers-reduced-motion."
+   },
+   {
+    "name": "rise",
+    "value": "translateY(16px) to 0 over 0.9s cubic-bezier(0.16, 1, 0.3, 1)",
+    "purpose": "Single entrance animation on the hero center block."
+   },
+   {
+    "name": "btn-transition",
+    "value": "box-shadow 0.25s ease, transform 0.25s ease",
+    "purpose": "Button hover glow + -1px lift; disabled under prefers-reduced-motion."
+   },
+   {
+    "name": "inst-fade",
+    "value": "opacity 0.2s ease",
+    "purpose": "Institution logo strip hover: 0.45 to 0.8 opacity."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "mobile",
+    "value": "860px"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "Gradient-border action: raised-ground fill, 1px cyan\u2192blue\u2192violet edge, blue glow on hover.",
+   "html": "<a class=\"ds-btn\" href=\"#\">Read the announcement</a>",
+   "css": ".ds-btn { position: relative; display: inline-block; padding: 0.85rem 1.9rem; border-radius: 8px; font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.06em; color: var(--text, #e8edf8); text-decoration: none; background: linear-gradient(var(--bg-raise, #0a1120), var(--bg-raise, #0a1120)) padding-box, linear-gradient(120deg, var(--cyan, #45e0e0), var(--blue, #3e6dff) 45%, var(--violet, #8a5cff)) border-box; border: 1px solid transparent; transition: box-shadow 0.25s ease, transform 0.25s ease; } .ds-btn:hover { box-shadow: 0 6px 28px -6px rgba(62, 109, 255, 0.55); transform: translateY(-1px); } .ds-btn:focus-visible { outline: 2px solid var(--cyan, #45e0e0); outline-offset: 3px; border-radius: 2px; }"
+  },
+  {
+   "name": "Arrow Link",
+   "kind": "button",
+   "refersTo": "link-arrow",
+   "description": "Secondary text action with an appended cyan arrow; hover lifts to full text color. Back variant leads with a cyan left arrow.",
+   "html": "<a class=\"ds-link-arrow\" href=\"#\">Meet the team</a> <a class=\"ds-link-back\" href=\"#\">All news</a>",
+   "css": ".ds-link-arrow, .ds-link-back { font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.06em; color: var(--text-2, #9fadc9); text-decoration: none; transition: color 0.15s ease; margin-right: 1.5rem; } .ds-link-arrow::after { content: ' \\2192'; color: var(--cyan, #45e0e0); } .ds-link-back::before { content: '\\2190  '; color: var(--cyan, #45e0e0); } .ds-link-arrow:hover, .ds-link-back:hover { color: var(--text, #e8edf8); } .ds-link-arrow:focus-visible, .ds-link-back:focus-visible { outline: 2px solid var(--cyan, #45e0e0); outline-offset: 3px; border-radius: 2px; }"
+  },
+  {
+   "name": "Navigation",
+   "kind": "nav",
+   "refersTo": "nav-link",
+   "description": "Brand lockup (knight + tracked caps) with tracked-uppercase label links \u2014 the uppercase survivors; hover turns cyan.",
+   "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">GAMBIT</span><ul class=\"ds-nav-links\"><li><a href=\"#\">Approach</a></li><li><a href=\"#\">Team</a></li><li><a href=\"#\">News</a></li><li><a href=\"#\">Contact</a></li></ul></nav>",
+   "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: var(--bg, #060a13); padding: 1rem 1.5rem; } .ds-nav-brand { font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 600; font-size: 1.05rem; letter-spacing: 0.28em; color: var(--text, #e8edf8); } .ds-nav-links { display: flex; gap: 2rem; list-style: none; margin: 0; padding: 0; } .ds-nav-links a { font-family: var(--body, 'Archivo', Arial, sans-serif); font-size: 0.8rem; font-weight: 550; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-2, #9fadc9); text-decoration: none; transition: color 0.15s ease; } .ds-nav-links a:hover { color: var(--cyan, #45e0e0); } .ds-nav-links a:focus-visible { outline: 2px solid var(--cyan, #45e0e0); outline-offset: 3px; border-radius: 2px; }"
+  },
+  {
+   "name": "News Date Label",
+   "kind": "chip",
+   "refersTo": "news-date",
+   "description": "Title Case cyan micro-label for dates and metadata (amended 2026-08-10: no uppercase transform).",
+   "html": "<time class=\"ds-news-date\" datetime=\"2026-08\">August 2026</time>",
+   "css": ".ds-news-date { font-family: var(--body, 'Archivo', Arial, sans-serif); font-size: 0.88rem; font-weight: 550; letter-spacing: 0.06em; color: var(--cyan, #45e0e0); }"
+  },
+  {
+   "name": "Roster Row",
+   "kind": "card",
+   "description": "Hairline-ruled four-column list row: gradient-ring avatar, display-face name, muted focus text, right-aligned Title Case institution.",
+   "html": "<div class=\"ds-roster-row\"><span class=\"ds-avatar\"><span class=\"ds-avatar-img\"></span></span><span class=\"ds-roster-name\">Jakoah Brgoch</span><span class=\"ds-roster-focus\">Machine-learning architectures and the synthesis of boride and carbide magnetic materials.</span><span class=\"ds-roster-inst\">University of Houston</span></div>",
+   "css": ".ds-roster-row { display: grid; grid-template-columns: 64px minmax(0,1fr) minmax(0,1.6fr) minmax(0,0.85fr); gap: 1rem 2rem; align-items: center; padding: 1.4rem 0; border-top: 1px solid rgba(126,154,220,0.16); border-bottom: 1px solid rgba(126,154,220,0.16); background: var(--bg, #060a13); font-family: var(--body, 'Archivo', Arial, sans-serif); } .ds-avatar { display: block; width: 64px; height: 64px; padding: 2px; border-radius: 12px; background: linear-gradient(120deg, var(--cyan, #45e0e0), var(--blue, #3e6dff) 45%, var(--violet, #8a5cff)); } .ds-avatar-img { display: block; width: 100%; height: 100%; border-radius: 10px; background: var(--bg-raise, #0a1120); } .ds-roster-name { font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 500; font-size: 1.45rem; letter-spacing: 0.01em; color: var(--text, #e8edf8); } .ds-roster-focus { color: var(--text-2, #9fadc9); font-size: 0.98rem; } .ds-roster-inst { font-size: 0.9rem; font-weight: 550; letter-spacing: 0.04em; color: var(--text-2, #9fadc9); text-align: right; }"
+  },
+  {
+   "name": "Institution Logo Strip",
+   "kind": "custom",
+   "description": "Centered strip of external logos neutralized to solid white (grayscale + brightness(0) + invert) at 0.45 opacity, 0.8 on hover.",
+   "html": "<div class=\"ds-inst-strip\"><a href=\"#\"><svg width=\"90\" height=\"30\" viewBox=\"0 0 90 30\"><rect x=\"2\" y=\"6\" width=\"86\" height=\"18\" rx=\"4\" fill=\"#8a1f2d\"/><text x=\"45\" y=\"19\" text-anchor=\"middle\" font-size=\"10\" fill=\"#fff\" font-family=\"sans-serif\">LOGO</text></svg></a><a href=\"#\"><svg width=\"90\" height=\"30\" viewBox=\"0 0 90 30\"><circle cx=\"15\" cy=\"15\" r=\"12\" fill=\"#1f5c8a\"/><text x=\"55\" y=\"19\" text-anchor=\"middle\" font-size=\"10\" fill=\"#1f5c8a\" font-family=\"sans-serif\">LOGO</text></svg></a></div>",
+   "css": ".ds-inst-strip { display: flex; flex-wrap: wrap; gap: 1.5rem 3.5rem; align-items: center; justify-content: center; background: var(--bg, #060a13); padding: 1.5rem; } .ds-inst-strip svg { height: 30px; width: auto; filter: grayscale(1) brightness(0) invert(1); opacity: 0.45; transition: opacity 0.2s ease; } .ds-inst-strip a:hover svg { opacity: 0.8; }"
+  },
+  {
+   "name": "Stage Heading",
+   "kind": "custom",
+   "description": "Numbered discovery-loop stage title with a leading 26px stroke icon in the stage's hue (cyan, blue, violet, mid-blue across the sequence).",
+   "html": "<h3 class=\"ds-stage\"><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"#45E0E0\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 12 L20 4 L34 12 L34 28 L20 36 L6 28 Z\"/><path d=\"M6 12 L20 20 L34 12 M20 20 L20 36\"/><circle cx=\"20\" cy=\"4\" r=\"2.6\" fill=\"#45E0E0\" stroke=\"none\"/><circle cx=\"6\" cy=\"12\" r=\"2.6\" fill=\"#45E0E0\" stroke=\"none\"/><circle cx=\"34\" cy=\"12\" r=\"2.6\" fill=\"#45E0E0\" stroke=\"none\"/><circle cx=\"20\" cy=\"20\" r=\"2.6\" fill=\"#45E0E0\" stroke=\"none\"/></svg>1. Predict</h3>",
+   "css": ".ds-stage { display: flex; align-items: center; gap: 0.8rem; font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 500; font-size: 1.3rem; letter-spacing: 0.02em; color: var(--text, #e8edf8); margin: 0; background: var(--bg, #060a13); padding: 0.5rem; } .ds-stage svg { width: 26px; height: 26px; flex-shrink: 0; overflow: visible; }"
+  },
+  {
+   "name": "Magnet-Card Frame",
+   "kind": "custom",
+   "description": "The signature 1px gradient ring (mask-composite technique) with edge-breaking Title Case label and N/S pole marks; the homepage hero is this at viewport scale (capped at 1560px).",
+   "html": "<div class=\"ds-card-frame\"><span class=\"ds-card-program\">An ARPA-E MAGNITO Project</span><span class=\"ds-card-pole ds-n\">N</span><span class=\"ds-card-pole ds-s\">S</span><span class=\"ds-card-word\">GAMBIT</span></div>",
+   "css": ".ds-card-frame { position: relative; width: 320px; height: 200px; background: var(--bg, #060a13); display: flex; align-items: center; justify-content: center; } .ds-card-frame::before { content: ''; position: absolute; inset: 14px; border-radius: 18px; padding: 1px; background: linear-gradient(160deg, rgba(69,224,224,0.8), rgba(62,109,255,0.45) 40%, rgba(138,92,255,0.7)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; pointer-events: none; } .ds-card-program { position: absolute; top: 14px; left: 50%; transform: translate(-50%, -50%); background: var(--bg, #060a13); padding: 0.15rem 0.8rem; font-family: var(--body, 'Archivo', Arial, sans-serif); font-size: 0.6rem; font-weight: 550; letter-spacing: 0.09em; color: var(--text-2, #9fadc9); white-space: nowrap; } .ds-card-pole { position: absolute; font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.05em; } .ds-card-pole.ds-n { top: 22px; left: 26px; color: var(--pole-n, #e08585); } .ds-card-pole.ds-s { bottom: 22px; right: 26px; color: var(--pole-s, #7d9be8); transform: rotate(180deg); } .ds-card-word { font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 600; font-size: 1.8rem; letter-spacing: 0.16em; margin-right: -0.16em; color: var(--text, #e8edf8); }"
+  },
+  {
+   "name": "Raised Section Band",
+   "kind": "custom",
+   "description": "The system's only filled container: a full-bleed one-step tonal band (ground-raise) announced by a hairline top edge, no shadow.",
+   "html": "<section class=\"ds-raised\"><h2>News &amp; discoveries</h2></section>",
+   "css": ".ds-raised { background: var(--bg-raise, #0a1120); border-top: 1px solid rgba(126,154,220,0.16); padding: 2.5rem 2rem; } .ds-raised h2 { font-family: var(--display, 'Clash Display', 'Avenir Next', sans-serif); font-weight: 600; font-size: 1.6rem; line-height: 1.08; letter-spacing: -0.01em; color: var(--text, #e8edf8); margin: 0; }"
+  },
+  {
+   "name": "Inner-Page Top Rule",
+   "kind": "custom",
+   "description": "The magnet card's edge carried onto inner pages as a 2px full-width gradient rule at 0.8 opacity.",
+   "html": "<div class=\"ds-page-rule\"></div>",
+   "css": ".ds-page-rule { height: 2px; width: 100%; background: linear-gradient(120deg, var(--cyan, #45e0e0), var(--blue, #3e6dff) 45%, var(--violet, #8a5cff)); opacity: 0.8; }"
+  }
+ ],
+ "narrative": {
+  "northStar": "Inside the Magnet Card",
+  "overview": "The site's world is the project's logo turned inside out: the visitor lands inside the emblem's magnet card, scaled to the viewport \u2014 1px gradient frame, warm-N / cool-S pole marks in opposite corners, the knight mark centered, cyan field lines radiating slowly behind everything. Every other surface derives from that card. It deliberately refuses the dark-SaaS default (gradient blob, centered pitch, three feature cards) in favor of a single continuous instrument: near-black ground, hairline rules instead of boxes, and color that appears almost exclusively as thin strokes of light.\n\nThe tone is institutional and investor-grade: a serious, funded, multi-institution research effort. Density is low and typographic \u2014 generous vertical space, long readable measures, wide-tracked capitals reserved for identity moments, quiet muted text for everything secondary. There is no stock imagery and no photography beyond the 64px team headshots; the pictures are the knight SVG, gray institution logos, and line-drawn scientific diagrams in the world's own stroke language.",
+  "keyCharacteristics": [
+   "Near-black ground (#060a13) with light carried in 1px cyan\u2192blue\u2192violet gradient strokes",
+   "The magnet card as the master container: full-viewport frame on the homepage (capped at 1560px), 2px gradient top rule on inner pages",
+   "N/S pole marks as corner punctuation (warm coral top-left, cool periwinkle bottom-right, rotated 180\u00b0)",
+   "Clash Display tracked caps for identity, Archivo for reading; small labels in Title Case, not uppercase",
+   "Structure by hairline rules and grids; the single filled surface is the full-bleed raised news band",
+   "Motion that is barely perceptible: a 240s field-ray rotation, one entrance rise, all honoring prefers-reduced-motion"
+  ],
+  "rules": [
+   {
+    "name": "The Thin Light Rule",
+    "body": "The gradient and its component hues appear as 1px\u20132.2px strokes, small glyphs, micro-labels, and thin rings \u2014 never as area fills, gradient text, or background washes. The allowed soft fills are the faint radial glows behind the hero rays and the loop disc (\u226422% alpha).",
+    "section": "colors"
+   },
+   {
+    "name": "The One Warm Note Rule",
+    "body": "The N pole coral (#e08585) is the only warm color in the system and appears only as the N pole mark. Do not promote it to a general accent, error color, or highlight.",
+    "section": "colors"
+   },
+   {
+    "name": "The Stage Hue Rule",
+    "body": "Discovery-loop stages carry per-stage stroke icons: Predict cyan (#45E0E0), Synthesize blue (#3E6DFF), Validate violet (#8A5CFF), Learn mid-blue (#5F7FFF). New stage-like sequences should sample along the same cyan\u2192violet axis.",
+    "section": "colors"
+   },
+   {
+    "name": "The Mask Plumbing Rule",
+    "body": "linear-gradient(#000 0 0) inside mask / -webkit-mask declarations (the .hero-frame gradient-ring technique) is mask alpha plumbing \u2014 an opaque coverage layer, not a black in the palette. Never extract it as a color token.",
+    "section": "colors"
+   },
+   {
+    "name": "The Title Case Label Rule",
+    "body": "Small labels \u2014 news dates, institution names, program attribution, footer meta \u2014 are set in Title Case with modest tracking (0.04\u20130.09em) at Archivo 550. Uppercase survives in exactly three places: nav links, the hero acronym line, and brand lockups (Clash Display, 0.26\u20130.28em tracking). Do not add new all-caps eyebrow labels. (Amended 2026-08-10, user direction.)",
+    "section": "typography"
+   },
+   {
+    "name": "The 550 Emphasis Rule",
+    "body": "Emphasis inside muted body text is Archivo weight 550 in full text color (#e8edf8), not bold, not an accent color. Italic + cyan is reserved for the single mission-line emphasis.",
+    "section": "typography"
+   },
+   {
+    "name": "The Frame Inset Rule",
+    "body": "Everything that sits on or near the card edge (frame, poles, program label, hero nav padding) derives from --frame-inset; adjust the one token, never the individual offsets.",
+    "section": "layout"
+   },
+   {
+    "name": "The Glow-Not-Shadow Rule",
+    "body": "Any box-shadow must be a colored, blurred glow in the element's own hue; never a neutral/black offset shadow. Surfaces are flat at rest; glow is a response to state or a marker of energy.",
+    "section": "elevation"
+   },
+   {
+    "name": "The One Step Up Rule",
+    "body": "Raised surfaces climb the tonal ladder one rung at a time (ground \u2192 ground-raise \u2192 surface) and announce themselves with a hairline top edge, never a shadow.",
+    "section": "elevation"
+   }
+  ],
+  "dos": [
+   "Do derive every new surface from the magnet-card world: ground #060a13, hairline structure, gradient strokes, pole-mark corner punctuation.",
+   "Do use the mask-composite gradient-ring technique (.hero-frame), the padding-box/border-box gradient border (.btn), and the gradient-padding ring (.avatar) whenever a gradient stroke is needed; never fake it with a wrapper div and inner fill.",
+   "Do draw new diagrams and icons as 1\u20132.2px stroke SVGs, round caps/joins, in the brand gradient or single stage hues; the loop figure and stage icons are the reference.",
+   "Do set new small labels in Title Case at Archivo 550 with 0.04\u20130.09em tracking (The Title Case Label Rule); uppercase only in nav, acronym line, and brand lockups.",
+   "Do neutralize any external logo through the .inst-strip filter chain (white, 0.45 opacity) before it touches the ground.",
+   "Do publish news by copying news/_template.html and adding entries to the homepage and archive lists \u2014 static HTML, no build step, minimal vanilla JS only (PRODUCT.md constraint).",
+   "Do honor prefers-reduced-motion for any new animation, and keep motion glacial and ambient (the 240s ray rotation is the ceiling of the site's energy).",
+   "Do keep the roster and news grids extensible: new PIs, team members, and posts are new hairline rows, never a redesign."
+  ],
+  "donts": [
+   "Don't group content with bordered cards or floating panels; hairline rules on transparent ground are the container, with the full-bleed raised band (ground-raise + hairline top) as the only fill (The One Step Up Rule).",
+   "Don't use neutral offset drop shadows; glow in the element's own hue only (The Glow-Not-Shadow Rule).",
+   "Don't use the gradient as a text fill or an area fill; it lives in strokes and rings (The Thin Light Rule).",
+   "Don't introduce warm colors beyond the N-pole coral, or use the pole colors outside the pole marks (The One Warm Note Rule).",
+   "Don't read linear-gradient(#000 0 0) in mask declarations as a color; it is mask alpha plumbing (The Mask Plumbing Rule).",
+   "Don't reuse the loop diagram's steel grays for UI; they are material rendering scoped to that illustration.",
+   "Don't use stock imagery or AI-clich\u00e9 visuals (user-pinned in PRODUCT.md); the knight, headshots, gray logos, and line-drawn diagrams are the imagery.",
+   "Don't add a .nojekyll file to this repo. The content-policy exclusion (PRODUCT.md, DESIGN.md, docs/, README.md never published to projectgambit.org) depends on GitHub Pages' Jekyll processing staying enabled via _config.yml's exclude list; .nojekyll would re-publish these internal files. Internal docs must never contain the excluded program names/numbers (see PRODUCT.md Capabilities and Constraints)."
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+# GitHub Pages runs Jekyll by default; this file only tells it what NOT to
+# publish. All HTML/CSS is served as-is (no layouts, no processing).
+# NOTE: files and folders starting with "_" (e.g. news/_template.html) are
+# excluded automatically.
+exclude:
+  - README.md
+  - .impeccable/
+  - .claude/

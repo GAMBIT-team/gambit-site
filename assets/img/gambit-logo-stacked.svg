@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 340">
+  <!-- B6 Final — proper knight, vertical flux lines, card = bar magnet (N top, S bottom) -->
+  <defs>
+    <!-- Card gradient: warm-navy top (N) to cool-navy bottom (S) -->
+    <linearGradient id="cardMagnet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E1B42"/>
+      <stop offset="40%" stop-color="#1E1E5E"/>
+      <stop offset="60%" stop-color="#1E1E5E"/>
+      <stop offset="100%" stop-color="#1B2E4A"/>
+    </linearGradient>
+    <!-- Flux line gradients -->
+    <linearGradient id="fl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2CAB81" stop-opacity="0.75"/>
+      <stop offset="35%" stop-color="#2CAB81" stop-opacity="0.18"/>
+      <stop offset="65%" stop-color="#2CAB81" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2CAB81" stop-opacity="0.75"/>
+    </linearGradient>
+    <linearGradient id="flb" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ECDC4" stop-opacity="0.5"/>
+      <stop offset="35%" stop-color="#4ECDC4" stop-opacity="0.1"/>
+      <stop offset="65%" stop-color="#4ECDC4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#4ECDC4" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="cgf" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/>
+      <feFlood flood-color="#2CAB81" flood-opacity="0.15" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Single arrowhead — orient="auto" handles direction -->
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5"
+            markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#2CAB81" opacity="0.55"/>
+    </marker>
+    <marker id="arrT" viewBox="0 0 10 10" refX="10" refY="5"
+            markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 Z" fill="#4ECDC4" opacity="0.4"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(160, 128)">
+
+    <!-- VERTICAL FLUX LINES -->
+    <g fill="none" stroke-linecap="round">
+
+      <!-- Center lines going STRAIGHT UP from N pole with arrowheads -->
+      <line x1="0" y1="-72" x2="0" y2="-118" stroke="#2CAB81" stroke-width="1.3" opacity="0.5" marker-end="url(#arr)"/>
+      <line x1="-7" y1="-71" x2="-12" y2="-112" stroke="#2CAB81" stroke-width="1.0" opacity="0.4" marker-end="url(#arr)"/>
+      <line x1="7" y1="-71" x2="12" y2="-112" stroke="#2CAB81" stroke-width="1.0" opacity="0.4" marker-end="url(#arr)"/>
+      <line x1="-14" y1="-70" x2="-22" y2="-105" stroke="#4ECDC4" stroke-width="0.7" opacity="0.3" marker-end="url(#arrT)"/>
+      <line x1="14" y1="-70" x2="22" y2="-105" stroke="#4ECDC4" stroke-width="0.7" opacity="0.3" marker-end="url(#arrT)"/>
+
+      <!-- Center lines going STRAIGHT DOWN from S pole with arrowheads -->
+      <line x1="0" y1="72" x2="0" y2="108" stroke="#2CAB81" stroke-width="1.3" opacity="0.5" marker-end="url(#arr)"/>
+      <line x1="-7" y1="71" x2="-12" y2="104" stroke="#2CAB81" stroke-width="1.0" opacity="0.4" marker-end="url(#arr)"/>
+      <line x1="7" y1="71" x2="12" y2="104" stroke="#2CAB81" stroke-width="1.0" opacity="0.4" marker-end="url(#arr)"/>
+      <line x1="-14" y1="70" x2="-22" y2="98" stroke="#4ECDC4" stroke-width="0.7" opacity="0.3" marker-end="url(#arrT)"/>
+      <line x1="14" y1="70" x2="22" y2="98" stroke="#4ECDC4" stroke-width="0.7" opacity="0.3" marker-end="url(#arrT)"/>
+
+      <!-- Right side: 7 thin solid lines — dense field -->
+      <path d="M 3,-72 C 3,-82 26,-76 26,-12 C 26,52 3,82 3,72" stroke="#2CAB81" stroke-width="0.7" opacity="0.35"/>
+      <path d="M 6,-72 C 7,-90 38,-80 38,-8 C 38,64 7,90 6,72" stroke="#2CAB81" stroke-width="0.8" opacity="0.4"/>
+      <path d="M 10,-72 C 12,-98 52,-86 52,-4 C 52,78 12,98 10,72" stroke="url(#fl)" stroke-width="0.9" opacity="0.45"/>
+      <path d="M 14,-70 C 18,-108 66,-92 66,0 C 66,92 18,108 14,70" stroke="url(#fl)" stroke-width="1.0" opacity="0.5"/>
+      <path d="M 18,-68 C 22,-114 78,-96 78,0 C 78,96 22,114 18,68" stroke="url(#fl)" stroke-width="1.1" opacity="0.5"/>
+      <path d="M 22,-67 C 28,-122 90,-100 90,0 C 90,100 28,122 22,67" stroke="url(#fl)" stroke-width="1.3" opacity="0.48"/>
+      <path d="M 26,-66 C 34,-130 104,-106 104,0 C 104,106 34,130 26,66" stroke="url(#fl)" stroke-width="1.5" opacity="0.45"/>
+
+      <!-- Left side -->
+      <path d="M -3,-72 C -3,-82 -26,-76 -26,-12 C -26,52 -3,82 -3,72" stroke="#2CAB81" stroke-width="0.7" opacity="0.35"/>
+      <path d="M -6,-72 C -7,-90 -38,-80 -38,-8 C -38,64 -7,90 -6,72" stroke="#2CAB81" stroke-width="0.8" opacity="0.4"/>
+      <path d="M -10,-72 C -12,-98 -52,-86 -52,-4 C -52,78 -12,98 -10,72" stroke="url(#fl)" stroke-width="0.9" opacity="0.45"/>
+      <path d="M -14,-70 C -18,-108 -66,-92 -66,0 C -66,92 -18,108 -14,70" stroke="url(#fl)" stroke-width="1.0" opacity="0.5"/>
+      <path d="M -18,-68 C -22,-114 -78,-96 -78,0 C -78,96 -22,114 -18,68" stroke="url(#fl)" stroke-width="1.1" opacity="0.5"/>
+      <path d="M -22,-67 C -28,-122 -90,-100 -90,0 C -90,100 -28,122 -22,67" stroke="url(#fl)" stroke-width="1.3" opacity="0.48"/>
+      <path d="M -26,-66 C -34,-130 -104,-106 -104,0 C -104,106 -34,130 -26,66" stroke="url(#fl)" stroke-width="1.5" opacity="0.45"/>
+    </g>
+
+    <!-- Card (bar magnet — two-tone: warm top, cool bottom) -->
+    <g transform="rotate(-8)" filter="url(#cgf)">
+      <!-- Main card fill -->
+      <rect x="-46" y="-70" width="92" height="140" rx="7" ry="7" fill="url(#cardMagnet)"/>
+      <!-- Subtle red tint on top half (N pole) -->
+      <rect x="-46" y="-70" width="92" height="70" rx="7" ry="0" fill="#D94F4F" opacity="0.06"/>
+      <!-- Subtle blue tint on bottom half (S pole) -->
+      <rect x="-46" y="0" width="92" height="70" rx="0" ry="7" fill="#4F7DD9" opacity="0.06"/>
+      <!-- Card border -->
+      <rect x="-46" y="-70" width="92" height="140" rx="7" ry="7" fill="none" stroke="#2CAB81" stroke-width="1.8"/>
+      <!-- Inner border -->
+      <rect x="-39" y="-63" width="78" height="126" rx="4" ry="4" fill="none" stroke="rgba(44,171,129,0.18)" stroke-width="0.7"/>
+
+      <!-- Knight from reference SVG -->
+      <g transform="translate(-31, -40) scale(0.22)">
+        <path d="M236.39 323.85H37.57c-.44-8.11-.21-15.91.72-23.41 11.11-89.64 114.91-89.27 91.19-194.65-7.85 34.34-27.83 42.45-58.03 38.37l-18.24 17.75c-19.5 18.98-46.89-14.39-28.92-34.94 37.54-39.68 48.92-64.52 62.54-74.96 5.19-3.97 11.58-3.79 11.27-11.33-.14-3.2-2.97-7.81-5.45-9.22-1.14-10.49-1.47-20.98 0-31.46 16.98 6.81 32.24 18.51 45.05 32.68l1.09-18.47c59.29 3.94 100.24 35.61 121.91 107 12.14 123.77-17.94 136.13-24.31 202.64z"
+          fill="rgba(44,171,129,0.1)" stroke="#2CAB81" stroke-width="10" stroke-linejoin="round"/>
+        <!-- Simple base (no bar magnet) -->
+        <path d="M45.32 338.54h191.36c8.76 0 15.92 7.2 15.92 15.92 0 8.72-7.2 15.92-15.92 15.92H45.32c-8.72 0-15.92-7.16-15.92-15.92s7.16-15.92 15.92-15.92z"
+          fill="rgba(44,171,129,0.06)" stroke="#2CAB81" stroke-width="8"/>
+      </g>
+
+      <!-- Corner N (top-left, replaces G — red tint for north pole) -->
+      <text x="-30" y="-51" font-family="Arial, Helvetica, sans-serif" font-size="16"
+            font-weight="900" fill="#D9726B" text-anchor="middle" dominant-baseline="central">N</text>
+      <!-- Corner S (bottom-right, inverted — blue tint for south pole) -->
+      <g transform="rotate(180, 30, 51)">
+        <text x="30" y="51" font-family="Arial, Helvetica, sans-serif" font-size="16"
+              font-weight="900" fill="#6B8BD9" text-anchor="middle" dominant-baseline="central">S</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="160" y="262" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" letter-spacing="4" fill="#1E1E5E" text-anchor="middle" dominant-baseline="central">GAMBIT</text>
+  <text x="160" y="296" font-family="Arial, Helvetica, sans-serif" font-size="8.5" font-weight="400" letter-spacing="2" fill="#5A6370" text-anchor="middle" dominant-baseline="central">GUIDED AI FOR MAGNETIC MATERIALS</text>
+</svg>

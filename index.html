@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAMBIT | AI-Guided Discovery of New Permanent Magnets</title>
+  <meta name="description" content="GAMBIT is an ARPA-E MAGNITO project uniting the University of Houston, Rice University, Colorado State University, and Newfound Materials to discover new permanent magnet materials that outperform today's best, through closed-loop, AI-guided materials science.">
+  <link rel="canonical" href="https://projectgambit.org/">
+  <meta property="og:title" content="GAMBIT | AI-Guided Discovery of New Permanent Magnets">
+  <meta property="og:description" content="An ARPA-E MAGNITO project uniting four institutions to discover the permanent magnets of the future through closed-loop, AI-guided materials science.">
+  <meta property="og:url" content="https://projectgambit.org/">
+  <meta property="og:image" content="https://projectgambit.org/assets/img/gambit-logo.png">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/ClashDisplay-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Archivo-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-rays" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1100 -1100 2200 2200" aria-hidden="true">
+        <line x1="299" y1="26" x2="1076" y2="94" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="290" y1="78" x2="1043" y2="280" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="272" y1="127" x2="979" y2="456" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="246" y1="172" x2="885" y2="619" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="212" y1="212" x2="764" y2="764" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="172" y1="246" x2="619" y2="885" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="127" y1="272" x2="456" y2="979" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="78" y1="290" x2="280" y2="1043" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="26" y1="299" x2="94" y2="1076" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-26" y1="299" x2="-94" y2="1076" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-78" y1="290" x2="-280" y2="1043" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-127" y1="272" x2="-456" y2="979" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-172" y1="246" x2="-619" y2="885" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-212" y1="212" x2="-764" y2="764" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-246" y1="172" x2="-885" y2="619" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-272" y1="127" x2="-979" y2="456" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-290" y1="78" x2="-1043" y2="280" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-299" y1="26" x2="-1076" y2="94" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-299" y1="-26" x2="-1076" y2="-94" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-290" y1="-78" x2="-1043" y2="-280" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-272" y1="-127" x2="-979" y2="-456" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-246" y1="-172" x2="-885" y2="-619" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-212" y1="-212" x2="-764" y2="-764" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-172" y1="-246" x2="-619" y2="-885" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-127" y1="-272" x2="-456" y2="-979" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="-78" y1="-290" x2="-280" y2="-1043" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="-26" y1="-299" x2="-94" y2="-1076" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="26" y1="-299" x2="94" y2="-1076" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="78" y1="-290" x2="280" y2="-1043" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="127" y1="-272" x2="456" y2="-979" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="172" y1="-246" x2="619" y2="-885" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="212" y1="-212" x2="764" y2="-764" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="246" y1="-172" x2="885" y2="-619" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+        <line x1="272" y1="-127" x2="979" y2="-456" stroke="#45E0E0" stroke-width="1" opacity="0.22"/>
+        <line x1="290" y1="-78" x2="1043" y2="-280" stroke="#5F7FFF" stroke-width="1" opacity="0.13"/>
+        <line x1="299" y1="-26" x2="1076" y2="-94" stroke="#8A5CFF" stroke-width="1" opacity="0.13"/>
+      </svg>
+    </div>
+    <div class="hero-frame" aria-hidden="true"></div>
+    <p class="hero-program"><a href="https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/magnito" rel="external">An ARPA-E MAGNITO Project</a></p>
+    <span class="hero-pole n" aria-hidden="true">N</span>
+    <span class="hero-pole s" aria-hidden="true">S</span>
+
+    <nav class="nav nav-links-only" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#market">Market</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-center">
+      <h1 class="hero-logo">
+        <img src="assets/img/gambit-logo-gray-lg.png" alt="GAMBIT: Guided AI for Magnetic Boride/Carbide Intermetallic Technologies" width="892" height="948">
+      </h1>
+      <p class="hero-mission">Discovering the <em>permanent magnets of the future</em> with closed-loop, AI-guided materials science.</p>
+      <div class="hero-actions">
+        <a class="btn" href="news/2026-08-arpa-e-award.html">Read the announcement</a>
+        <a class="link-arrow" href="#team">Meet the team</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="approach">
+      <div class="container">
+        <h2 class="section-title">A closed loop for magnet discovery</h2>
+        <p class="section-lead">
+          High-performance permanent magnets sit inside nearly every electric motor,
+          generator, and actuator, and the world needs better ones. GAMBIT unites
+          <strong>high-throughput computation, machine learning, advanced synthesis, and rapid
+          magnetic characterization</strong> in a single closed loop: models propose new magnetic
+          compounds, laboratories make and measure them, and every result sharpens the
+          next round of predictions.
+        </p>
+
+        <figure class="loop-figure" aria-label="The GAMBIT discovery loop: predict, synthesize, validate, learn, and back to predict">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 310" role="img">
+            <defs>
+              <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#45E0E0"/>
+                <stop offset="50%" stop-color="#3E6DFF"/>
+                <stop offset="100%" stop-color="#8A5CFF"/>
+              </linearGradient>
+              <linearGradient id="discSide" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3A4358"/>
+                <stop offset="18%" stop-color="#8C97AD"/>
+                <stop offset="42%" stop-color="#CBD3E1"/>
+                <stop offset="60%" stop-color="#7E8AA2"/>
+                <stop offset="85%" stop-color="#454F66"/>
+                <stop offset="100%" stop-color="#313A4E"/>
+              </linearGradient>
+              <radialGradient id="discTop" cx="38%" cy="32%" r="80%">
+                <stop offset="0%" stop-color="#D9DFEA"/>
+                <stop offset="55%" stop-color="#9AA5BA"/>
+                <stop offset="100%" stop-color="#5C6880"/>
+              </radialGradient>
+              <marker id="loopArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                <path d="M 0 1.5 L 9 5 L 0 8.5 Z" fill="#5F7FFF"/>
+              </marker>
+            </defs>
+            <!-- Faded neodymium disc at the heart of the loop -->
+            <radialGradient id="discHalo" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#3E6DFF" stop-opacity="0.22"/>
+              <stop offset="55%" stop-color="#45E0E0" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#45E0E0" stop-opacity="0"/>
+            </radialGradient>
+            <ellipse cx="500" cy="150" rx="230" ry="105" fill="url(#discHalo)" aria-hidden="true"/>
+            <g transform="translate(500,132) scale(1.25)" opacity="0.5" aria-hidden="true">
+              <path d="M-64 0 L-64 26 A 64 24 0 0 0 64 26 L64 0 Z" fill="url(#discSide)"/>
+              <ellipse cx="0" cy="0" rx="64" ry="24" fill="url(#discTop)"/>
+              <ellipse cx="0" cy="0" rx="64" ry="24" fill="none" stroke="#E4E9F2" stroke-width="1" opacity="0.5"/>
+            </g>
+            <g fill="none" stroke="url(#lg)" stroke-width="1.6" opacity="0.9">
+              <path d="M 585.4 53.4 A 330 100 0 0 1 818.7 124.1" marker-end="url(#loopArr)"/>
+              <path d="M 818.7 175.9 A 330 100 0 0 1 585.4 246.6" marker-end="url(#loopArr)"/>
+              <path d="M 414.6 246.6 A 330 100 0 0 1 181.3 175.9" marker-end="url(#loopArr)"/>
+              <path d="M 181.3 124.1 A 330 100 0 0 1 414.6 53.4" marker-end="url(#loopArr)"/>
+            </g>
+            <!-- Stage icons -->
+            <g transform="translate(478,28)" fill="none" stroke="#45E0E0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 12 L20 4 L34 12 L34 28 L20 36 L6 28 Z"/>
+              <path d="M6 12 L20 20 L34 12 M20 20 L20 36"/>
+              <circle cx="20" cy="4" r="2.4" fill="#45E0E0" stroke="none"/>
+              <circle cx="6" cy="12" r="2.4" fill="#45E0E0" stroke="none"/>
+              <circle cx="34" cy="12" r="2.4" fill="#45E0E0" stroke="none"/>
+              <circle cx="20" cy="20" r="2.4" fill="#45E0E0" stroke="none"/>
+            </g>
+            <g transform="translate(812,132)" fill="none" stroke="#3E6DFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 14 H32 L27 34 Q20 38 13 34 Z"/>
+              <path d="M20 10 Q16 5 20 0 Q24 5 20 10 Z"/>
+              <path d="M4 14 H36" opacity="0.55"/>
+            </g>
+            <g transform="translate(480,236)" fill="none" stroke="#8A5CFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10" y="12" width="20" height="14" rx="2.5"/>
+              <path d="M20 12 L20 26" opacity="0.5"/>
+              <path d="M6 19 Q6 4 20 4 Q34 4 34 19" opacity="0.7"/>
+              <path d="M2 19 Q2 -2 20 -2 Q38 -2 38 19" opacity="0.4"/>
+            </g>
+            <g transform="translate(130,130)" fill="none" stroke="#5F7FFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M32 20 A 12 12 0 1 1 26 9.6"/>
+              <path d="M22 3 L27 10 L19 12" fill="#5F7FFF" stroke="none"/>
+              <circle cx="20" cy="20" r="2.6" fill="#5F7FFF" stroke="none"/>
+            </g>
+            <g font-size="24" fill="#E8EDF8">
+              <text x="500" y="12" text-anchor="middle" dominant-baseline="central">1. Predict</text>
+              <text x="862" y="150" text-anchor="start" dominant-baseline="central">2. Synthesize</text>
+              <text x="500" y="296" text-anchor="middle" dominant-baseline="central">3. Validate</text>
+              <text x="120" y="150" text-anchor="end" dominant-baseline="central">4. Learn</text>
+            </g>
+          </svg>
+        </figure>
+
+        <div class="stages">
+          <div class="stage">
+            <h3><svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="#45E0E0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 L20 4 L34 12 L34 28 L20 36 L6 28 Z"/><path d="M6 12 L20 20 L34 12 M20 20 L20 36"/><circle cx="20" cy="4" r="2.6" fill="#45E0E0" stroke="none"/><circle cx="6" cy="12" r="2.6" fill="#45E0E0" stroke="none"/><circle cx="34" cy="12" r="2.6" fill="#45E0E0" stroke="none"/><circle cx="20" cy="20" r="2.6" fill="#45E0E0" stroke="none"/></svg>1. Predict</h3>
+            <p>First-principles simulation and machine-learning models screen vast spaces
+            of candidate boride, carbide, and intermetallic compounds, ranking the
+            materials most likely to outperform today's best magnets.</p>
+          </div>
+          <div class="stage">
+            <h3><svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="#3E6DFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 14 H32 L27 34 Q20 38 13 34 Z"/><path d="M20 10 Q16 5 20 0 Q24 5 20 10 Z"/><path d="M4 14 H36" opacity="0.55"/></svg>2. Synthesize</h3>
+            <p>Top candidates move to the lab, where complementary synthesis routes,
+            guided by computed reaction pathways, turn predictions into real
+            materials.</p>
+          </div>
+          <div class="stage">
+            <h3><svg viewBox="0 -4 40 40" aria-hidden="true" fill="none" stroke="#8A5CFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="12" width="20" height="14" rx="2.5"/><path d="M20 12 L20 26" opacity="0.5"/><path d="M6 19 Q6 4 20 4 Q34 4 34 19" opacity="0.7"/><path d="M2 19 Q2 -2 20 -2 Q38 -2 38 19" opacity="0.4"/></svg>3. Validate</h3>
+            <p>Rapid magnetic characterization measures each new material against the
+            properties that matter for a working magnet, without waiting on slow
+            single-crystal studies.</p>
+          </div>
+          <div class="stage">
+            <h3><svg viewBox="0 0 40 40" aria-hidden="true" fill="none" stroke="#5F7FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 20 A 12 12 0 1 1 26 9.6"/><path d="M22 3 L27 10 L19 12" fill="#5F7FFF" stroke="none"/><circle cx="20" cy="20" r="2.6" fill="#5F7FFF" stroke="none"/></svg>4. Learn</h3>
+            <p>Every result, success or failure, flows back into the models, so each
+            cycle of the loop predicts better than the last. The discovery engine
+            improves as it runs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <h2 class="section-title">Our multi-institutional team</h2>
+        <p class="section-lead">
+          GAMBIT pairs university research groups with startup agility: computation,
+          synthesis, and characterization under a single roadmap.
+        </p>
+
+        <ul class="roster">
+          <li>
+            <a class="avatar" href="https://www.brgochchemistry.com/" rel="external"><img src="assets/img/team/brgoch.jpg" alt="Jakoah Brgoch" width="64" height="64"></a>
+            <span class="name"><a href="https://www.brgochchemistry.com/" rel="external">Prof. Jakoah Brgoch</a></span>
+            <span class="focus">Machine-learning architectures and the synthesis of boride and carbide magnetic materials.</span>
+            <span class="inst">University of Houston</span>
+          </li>
+          <li>
+            <a class="avatar" href="https://jdbocarsly.github.io/" rel="external"><img src="assets/img/team/bocarsly.jpg" alt="Joshua Bocarsly" width="64" height="64"></a>
+            <span class="name"><a href="https://jdbocarsly.github.io/" rel="external">Prof. Joshua Bocarsly</a></span>
+            <span class="focus">Magnetic characterization and the data infrastructure that keeps every measurement machine-ready.</span>
+            <span class="inst">University of Houston</span>
+          </li>
+          <li>
+            <a class="avatar" href="https://hautier.rice.edu/" rel="external"><img src="assets/img/team/hautier.jpg" alt="Geoffroy Hautier" width="64" height="64"></a>
+            <span class="name"><a href="https://hautier.rice.edu/" rel="external">Prof. Geoffroy Hautier</a></span>
+            <span class="focus">High-throughput first-principles computation and large-scale screening of candidate magnets.</span>
+            <span class="inst">Rice University</span>
+          </li>
+          <li>
+            <a class="avatar" href="https://neilsonlab.colostate.edu/" rel="external"><img src="assets/img/team/neilson.jpg" alt="Jamie Neilson" width="64" height="64"></a>
+            <span class="name"><a href="https://neilsonlab.colostate.edu/" rel="external">Prof. Jamie Neilson</a></span>
+            <span class="focus">Non-canonical synthesis routes and in&nbsp;situ X-ray diffraction of reactions as they happen.</span>
+            <span class="inst">Colorado State University</span>
+          </li>
+          <li>
+            <a class="avatar" href="https://www.newfoundmaterials.com/" rel="external"><img src="assets/img/team/mcdermott.jpg" alt="Matthew McDermott" width="64" height="64"></a>
+            <span class="name"><a href="https://www.newfoundmaterials.com/" rel="external">Dr. Matthew McDermott</a></span>
+            <span class="focus">Reaction-network synthesis planning, candidate ranking, and technoeconomic analysis.</span>
+            <span class="inst">Newfound Materials</span>
+          </li>
+        </ul>
+
+        <div class="inst-strip" aria-label="Participating institutions">
+          <a href="https://www.uh.edu/" rel="external"><img src="assets/img/inst/uh.svg" alt="University of Houston" style="height:30px"></a>
+          <a href="https://www.rice.edu/" rel="external"><img src="assets/img/inst/rice.png" alt="Rice University" style="height:32px"></a>
+          <a href="https://www.colostate.edu/" rel="external"><img src="assets/img/inst/csu.svg" alt="Colorado State University" style="height:44px"></a>
+          <a href="https://www.newfoundmaterials.com/" rel="external"><img src="assets/img/inst/newfound.svg" alt="Newfound Materials" style="height:22px"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="container">
+        <h2 class="section-title">From discovery to market</h2>
+        <p class="section-lead">
+          GAMBIT is built to leave the lab: <strong>stronger permanent magnets for the
+          electric motors, generators, electronics, and HVAC equipment that
+          electrification depends on</strong>, judged on cost and manufacturability from the first prediction onward.
+        </p>
+
+        <figure class="loop-figure market-figure" aria-label="New magnets flowing into motor, generator, electronics, and HVAC applications">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" role="img">
+            <defs>
+              <linearGradient id="mSide" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3A4358"/>
+                <stop offset="18%" stop-color="#8C97AD"/>
+                <stop offset="42%" stop-color="#CBD3E1"/>
+                <stop offset="60%" stop-color="#7E8AA2"/>
+                <stop offset="85%" stop-color="#454F66"/>
+                <stop offset="100%" stop-color="#313A4E"/>
+              </linearGradient>
+              <radialGradient id="mTop" cx="38%" cy="32%" r="80%">
+                <stop offset="0%" stop-color="#D9DFEA"/>
+                <stop offset="55%" stop-color="#9AA5BA"/>
+                <stop offset="100%" stop-color="#5C6880"/>
+              </radialGradient>
+              <linearGradient id="mFlux" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#45E0E0"/>
+                <stop offset="50%" stop-color="#3E6DFF"/>
+                <stop offset="100%" stop-color="#8A5CFF"/>
+              </linearGradient>
+              <marker id="mArr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 1.5 L 9 5 L 0 8.5 Z" fill="#5F7FFF"/>
+              </marker>
+            </defs>
+            <g transform="translate(150,150) scale(0.9)">
+              <path d="M-64 0 L-64 26 A 64 24 0 0 0 64 26 L64 0 Z" fill="url(#mSide)"/>
+              <ellipse cx="0" cy="0" rx="64" ry="24" fill="url(#mTop)"/>
+              <ellipse cx="0" cy="0" rx="64" ry="24" fill="none" stroke="#E4E9F2" stroke-width="1" opacity="0.5"/>
+            </g>
+            <g fill="none" stroke="url(#mFlux)" stroke-width="1.6" opacity="0.9">
+              <path d="M 230 138 C 420 45, 560 45, 750 45" marker-end="url(#mArr)"/>
+              <path d="M 236 148 C 430 122, 550 118, 750 115" marker-end="url(#mArr)"/>
+              <path d="M 236 158 C 430 182, 550 186, 750 185" marker-end="url(#mArr)"/>
+              <path d="M 230 168 C 420 255, 560 255, 750 255" marker-end="url(#mArr)"/>
+            </g>
+            <g transform="translate(775,23)" fill="none" stroke="#45E0E0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="20" cy="22" r="15"/>
+              <circle cx="20" cy="22" r="4.5" fill="#45E0E0" stroke="none"/>
+              <path d="M35 22 H45"/>
+              <path d="M20 3 L20 7 M20 37 L20 41 M1 22 L5 22"/>
+            </g>
+            <g transform="translate(775,93)" fill="none" stroke="#3E6DFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 20 L20 44"/>
+              <path d="M14 44 H26"/>
+              <path d="M20 20 L20 2 M20 20 L36 29 M20 20 L4 29"/>
+              <circle cx="20" cy="20" r="3" fill="#3E6DFF" stroke="none"/>
+            </g>
+            <g transform="translate(775,163)" fill="none" stroke="#5F7FFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="10" width="24" height="24" rx="4"/>
+              <rect x="16" y="18" width="8" height="8" opacity="0.7"/>
+              <path d="M13 10 V4 M20 10 V4 M27 10 V4 M13 34 V40 M20 34 V40 M27 34 V40 M8 15 H2 M8 22 H2 M8 29 H2 M32 15 H38 M32 22 H38 M32 29 H38"/>
+            </g>
+            <g transform="translate(775,233)" fill="none" stroke="#8A5CFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="36" height="36" rx="8"/>
+              <circle cx="20" cy="22" r="3" fill="#8A5CFF" stroke="none"/>
+              <path d="M20 19 C 27 12, 33 15, 31 22 M20 25 C 13 32, 7 29, 9 22 M17 22 C 10 15, 13 9, 20 11 M23 22 C 30 29, 27 35, 20 33"/>
+            </g>
+            <g font-size="21" fill="#E8EDF8">
+              <text x="835" y="45" text-anchor="start" dominant-baseline="central">Motors</text>
+              <text x="835" y="115" text-anchor="start" dominant-baseline="central">Generators</text>
+              <text x="835" y="185" text-anchor="start" dominant-baseline="central">Electronics</text>
+              <text x="835" y="255" text-anchor="start" dominant-baseline="central">HVAC</text>
+            </g>
+            <text x="150" y="245" font-size="17" fill="#9FADC9" text-anchor="middle" dominant-baseline="central">New magnets</text>
+          </svg>
+        </figure>
+
+        <div class="stages">
+          <div class="stage">
+            <h3>Technology-to-market lead</h3>
+            <p><strong>Newfound Materials</strong> leads our path to market, running
+            techno-economic and manufacturability analysis on every candidate.</p>
+          </div>
+          <div class="stage">
+            <h3>Application partners</h3>
+            <p>We work with <strong>Carrier</strong> to ground the program in real
+            HVAC applications.</p>
+          </div>
+        </div>
+
+        <p class="market-cta">Building products that depend on high-performance magnets?
+        We welcome commercial partners.</p>
+        <div class="hero-actions market-actions">
+          <a class="btn" href="mailto:info@projectgambit.org">Partner with us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-raised" id="news">
+      <div class="container">
+        <h2 class="section-title">News &amp; discoveries</h2>
+
+        <article class="news-item">
+          <div class="news-item-head">
+            <time class="news-date" datetime="2026-08">August 2026</time>
+            <h3><a href="news/2026-08-arpa-e-award.html">GAMBIT selected for ARPA‑E's MAGNITO program</a></h3>
+          </div>
+          <div class="news-item-body">
+            <p>A four-institution team led by the University of Houston will spend the next
+            three years hunting for the permanent magnets of the future by combining AI-guided
+            prediction, synthesis, and characterization in one closed discovery loop.</p>
+            <a class="link-arrow" href="news/2026-08-arpa-e-award.html">Read more</a>
+          </div>
+        </article>
+
+        <p class="news-all"><a class="link-arrow" href="news/index.html">All news</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-brand">
+          <img src="assets/img/gambit-logo-gray.png" alt="GAMBIT" width="130" height="138">
+        </p>
+        <div class="footer-contact">
+          <h4>Get in touch</h4>
+          <p>Collaboration, press, and program inquiries:<br>
+          <a href="mailto:info@projectgambit.org">info@projectgambit.org</a></p>
+        </div>
+        <p class="footer-ack">
+          GAMBIT (Guided AI for Magnetic Boride/Carbide Intermetallic Technologies)
+          is supported by the U.S. Department of Energy, Advanced Research Projects
+          Agency&#8211;Energy (ARPA-E), under the
+          <a href="https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/magnito" rel="external">MAGNITO program</a>.
+          The views expressed here are those of the project team and do not
+          necessarily reflect those of the U.S. Department of Energy.
+        </p>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 Project GAMBIT</span>
+        <span>projectgambit.org</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
