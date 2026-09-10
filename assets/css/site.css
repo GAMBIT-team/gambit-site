@@ -512,6 +512,21 @@ button:focus-visible {
 
 .news-all { margin-top: 2.2rem; }
 
+/* ---- Press coverage ---- */
+/* Press items reuse .news-item; they carry an outlet above the headline, and
+   their headlines are the publications' own, so they run a size smaller. */
+.press-outlet {
+  margin-top: 0.6rem;
+  font-family: var(--display);
+  font-weight: 600;
+  color: var(--text);
+}
+.press-item h3 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  max-width: 30ch;
+}
+
 /* ============================================================
    Footer
    ============================================================ */
