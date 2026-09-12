@@ -512,6 +512,33 @@ button:focus-visible {
 
 .news-all { margin-top: 2.2rem; }
 
+/* ---- News page sections ---- */
+/* Section heading a step below .page-title, for pages with more than one part */
+.subhead {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.55rem;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  margin-bottom: 1rem;
+}
+.news-section { margin-top: 3rem; }
+.news-section + .news-section { margin-top: 4rem; }
+
+/* Press items reuse .news-item; they carry an outlet above the headline, and
+   their headlines are the publications' own, so they run a size smaller. */
+.press-outlet {
+  margin-top: 0.6rem;
+  font-family: var(--display);
+  font-weight: 600;
+  color: var(--text);
+}
+.press-item h3 {
+  margin-top: 0.45rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  max-width: 30ch;
+}
+
 /* ============================================================
    Footer
    ============================================================ */
